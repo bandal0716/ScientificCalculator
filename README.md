@@ -1,5 +1,5 @@
 # ScientificCalculator
-##공학용계산기
+## 공학용계산기
 
 [mXparserlink]: http://mathparser.org/ "Go mathparse"
 1. 세로화면일때는 일반계산기이다.
