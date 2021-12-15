@@ -50,52 +50,31 @@ public class MainActivity extends AppCompatActivity {
         updateText(getResources().getString(R.string.twoText));
     }
 
-    public void threeBTNPush(View view){
-        updateText(getResources().getString(R.string.threeText));
-    }
+    public void threeBTNPush(View view){ updateText(getResources().getString(R.string.threeText)); }
 
-    public void fourBTNPush(View view){
-
-        updateText(getResources().getString(R.string.fourText));
-    }
+    public void fourBTNPush(View view){ updateText(getResources().getString(R.string.fourText)); }
 
     public void fiveBTNPush(View view){
         updateText(getResources().getString(R.string.fiveText));
     }
 
-    public void sixBTNPush(View view){
+    public void sixBTNPush(View view){ updateText(getResources().getString(R.string.sixText));}
 
-        updateText(getResources().getString(R.string.sixText));
+    public void sevenBTNPush(View view){ updateText(getResources().getString(R.string.sevenText));
     }
-
-    public void sevenBTNPush(View view){
-        updateText(getResources().getString(R.string.sevenText));
-    }
-
-    public void eightBTNPush(View view){
-        updateText(getResources().getString(R.string.eightText));
-    }
+    public void eightBTNPush(View view){ updateText(getResources().getString(R.string.eightText)); }
 
     public void nineBTNPush(View view){
         updateText(getResources().getString(R.string.nineText));
     }
 
-    public void divideBTNPush(View view){
-        updateText(getResources().getString(R.string.divideText));
-    }
+    public void divideBTNPush(View view){ updateText(getResources().getString(R.string.divideText)); }
 
-    public void multiplyBTNPush(View view){
-        updateText(getResources().getString(R.string.multiplyText));
-    }
+    public void multiplyBTNPush(View view){ updateText(getResources().getString(R.string.multiplyText)); }
 
-    public void subtractBTNPush(View view){
-        updateText(getResources().getString(R.string.subtractText));
-    }
+    public void subtractBTNPush(View view){ updateText(getResources().getString(R.string.subtractText)); }
 
-    public void addBTNPush(View view){
-
-        updateText(getResources().getString(R.string.addText));
-    }
+    public void addBTNPush(View view){ updateText(getResources().getString(R.string.addText)); }
 
     public void clearBTNPush(View view){
         display.setText("");
@@ -175,15 +154,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void SqrtBTNPush(View view){
-        updateText("sqrt(");
+        updateText("√");
     }
 
     public  void AbsoluteValueBTNPush(View view){
-        updateText("abs(");
+        updateText("|x|(");
     }
 
     public  void PiBTNPush(View view){
-        updateText("pi");
+        updateText("π");
     }
 
     public  void EBTNPush(View view){

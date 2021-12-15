@@ -41,7 +41,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -70,7 +70,6 @@
             android:text="@string/zeroText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button13" />
 
         <Button
@@ -105,15 +104,16 @@
             android:id="@+id/button18"
             android:layout_width="0dp"
             android:layout_height="40dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/arithmetic_button_background"
             android:onClick="addBTNPush"
             android:text="@string/addText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@+id/button16"
             app:layout_constraintTop_toBottomOf="@+id/button14"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="293dp" />
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button19"
@@ -153,22 +153,22 @@
             android:text="@string/oneText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="0dp"
             android:layout_height="40dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/arithmetic_button_background"
             android:onClick="subtractBTNPush"
             android:text="@string/subtractText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="293dp" />
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button15"
@@ -194,22 +194,22 @@
             android:text="@string/fourText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button6" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="40dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/arithmetic_button_background"
             android:onClick="multiplyBTNPush"
             android:text="@string/multiplyText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@+id/button15"
             app:layout_constraintTop_toBottomOf="@+id/button8"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="293dp" />
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button4"
@@ -249,7 +249,6 @@
             android:text="@string/sevenText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button11" />
 
         <ImageButton
@@ -271,15 +270,16 @@
             android:id="@+id/button8"
             android:layout_width="0dp"
             android:layout_height="40dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/arithmetic_button_background"
             android:onClick="divideBTNPush"
             android:text="@string/divideText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@+id/button4"
             app:layout_constraintTop_toBottomOf="@+id/button7"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="293dp" />
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button9"
@@ -316,7 +316,6 @@
             android:text="@string/clearText"
             android:textColor="@color/tanAccent"
             android:textSize="28sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -324,6 +323,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
@@ -350,11 +351,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="trigCosBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="trigCosBTNPush"
             android:text="@string/trigCosText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button21"
             app:layout_constraintTop_toTopOf="parent" />
@@ -365,11 +366,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="trigTanBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="trigTanBTNPush"
             android:text="@string/trigTanText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button22"
             app:layout_constraintTop_toTopOf="parent" />
@@ -380,11 +381,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="trigArcSinBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="trigArcSinBTNPush"
             android:text="@string/trigArcSinText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button21" />
@@ -395,11 +396,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="trigArcCosBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="trigArcCosBTNPush"
             android:text="@string/trigArcCosText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button24"
             app:layout_constraintTop_toBottomOf="@+id/button22" />
@@ -410,11 +411,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="trigArcTanBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="trigArcTanBTNPush"
             android:text="@string/trigArcTanText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button25"
             app:layout_constraintTop_toBottomOf="@+id/button23" />
@@ -425,11 +426,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="LogBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="LogBTNPush"
             android:text="@string/LogText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button24" />
@@ -440,11 +441,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="naturalLogBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="naturalLogBTNPush"
             android:text="@string/naturalLogText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button27"
             app:layout_constraintTop_toBottomOf="@+id/button25" />
@@ -455,11 +456,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="SqrtBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="SqrtBTNPush"
             android:text="@string/squareRootText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button28"
             app:layout_constraintTop_toBottomOf="@+id/button26" />
@@ -470,11 +471,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="EBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="EBTNPush"
             android:text="@string/eText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button27" />
@@ -485,11 +486,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="PiBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="PiBTNPush"
             android:text="@string/piText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button30"
             app:layout_constraintTop_toBottomOf="@+id/button28" />
@@ -500,11 +501,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="AbsoluteValueBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="AbsoluteValueBTNPush"
             android:text="@string/absoluteValueText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button31"
             app:layout_constraintTop_toBottomOf="@+id/button29" />
@@ -515,11 +516,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="IsPrimeFunctionBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="IsPrimeFunctionBTNPush"
             android:text="@string/isPrimeFunctionText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button30" />
@@ -530,11 +531,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="XSquaredBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="XSquaredBTNPush"
             android:text="@string/xSquaredText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button33"
             app:layout_constraintTop_toBottomOf="@+id/button31" />
@@ -545,11 +546,11 @@
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:onClick="XPowerYBTNPush"
             android:background="@drawable/button_background"
+            android:onClick="XPowerYBTNPush"
             android:text="@string/xPowerYText"
-            android:textColor="@color/tanAccent"
             android:textAllCaps="false"
+            android:textColor="@color/tanAccent"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@+id/button34"
             app:layout_constraintTop_toBottomOf="@+id/button32" />
